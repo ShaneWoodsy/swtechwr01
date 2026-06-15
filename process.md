@@ -1,3 +1,8 @@
+---
+layout: default
+title: Process
+---
+
 # My Process
 
 ## Documentation Development Workflow

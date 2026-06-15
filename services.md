@@ -1,3 +1,8 @@
+---
+layout: default
+title: Services
+---
+
 # Services
 
 ## Docs as Code Services

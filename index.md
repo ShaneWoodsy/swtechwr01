@@ -1,3 +1,10 @@
+---
+layout: default
+title: About
+---
+
+<img src="img/shane.png" alt="Shane Woods" style="width: 200px; height: 200px; border-radius: 50%; border: 3px solid #333; display: block; margin: 20px auto;">
+
 # About Me
 
 Hi I'm Shane, I enjoy taking complex ideas and tools and finding ways to make them easier to understand and accessible.
