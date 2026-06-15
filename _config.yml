@@ -1,0 +1,41 @@
+# Site Configuration for GitHub Pages
+
+title: Shane Woods - Docs as Code Technical Writer
+description: Professional technical writing and API documentation services
+author: Shane Woods
+email: contact@example.com
+
+# Build settings
+theme: jekyll-theme-cayman
+markdown: kramdown
+
+# URL configuration
+url: https://your-username.github.io/swtechwr01
+baseurl: /swtechwr01
+
+# Navigation
+header_pages:
+  - index.md
+  - portfolio.md
+  - expertise.md
+  - services.md
+  - process.md
+
+# Social links
+linkedin_username: 1-shane-woods
+github_username: your-username
+
+# Analytics (optional)
+# google_analytics: UA-XXXXXXXXX-X
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
