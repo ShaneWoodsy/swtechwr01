@@ -19,6 +19,7 @@ Hi I'm Shane, I enjoy taking complex ideas and tools and finding ways to make th
 
 #### Contact Me
 
-Reach me [online](https://www.linkedin.com/in/1-shane-woods)
+📧 **Email**: [swoods.js@gmail.com](mailto:swoods.js@gmail.com)  
+🔗 **LinkedIn**: [1-shane-woods](https://www.linkedin.com/in/1-shane-woods)
 
 
