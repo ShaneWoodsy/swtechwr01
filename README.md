@@ -28,11 +28,11 @@ I specialize in:
 
 Explore my work and expertise:
 
-- **[About](index.md)** - Quick introduction and contact
-- **[Expertise](expertise.md)** - Technical skills and specializations
-- **[Services](services.md)** - What I'm looking for in my next role
-- **[Process](process.md)** - How I approach documentation projects
-- **[Portfolio](portfolio.md)** - Documentation projects and examples
+- **[About](index)** - Quick introduction and contact
+- **[Expertise](expertise)** - Technical skills and specializations
+- **[Services](services)** - What I'm looking for in my next role
+- **[Process](process)** - How I approach documentation projects
+- **[Portfolio](portfolio)** - Documentation projects and examples
 
 ### Example Work
 

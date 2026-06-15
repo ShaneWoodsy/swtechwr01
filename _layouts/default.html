@@ -9,35 +9,35 @@
 <body>
     <div class="wrapper">
         <header>
-            <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+            <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
             <p>{{ site.description }}</p>
 
             <!-- Navigation Menu -->
-            <nav style="margin-top: 20px; border-top: 1px solid #ddd; padding-top: 15px;">
-                <h3 style="margin-top: 0;">Pages</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a href="{{ '/index.html' | relative_url }}">About Me</a></li>
-                    <li><a href="{{ '/portfolio.html' | relative_url }}">Portfolio</a></li>
-                    <li><a href="{{ '/expertise.html' | relative_url }}">Expertise</a></li>
-                    <li><a href="{{ '/services.html' | relative_url }}">Services</a></li>
-                    <li><a href="{{ '/process.html' | relative_url }}">Process</a></li>
+            <nav style="margin-top: 20px; border-top: 1px solid #ccc; padding-top: 15px;">
+                <h3 style="margin-top: 0; font-size: 14px;">📄 Pages</h3>
+                <ul style="list-style: none; padding: 0; margin: 10px 0;">
+                    <li><a href="{{ site.baseurl }}/index.html" style="display: block; padding: 5px 0;">About Me</a></li>
+                    <li><a href="{{ site.baseurl }}/portfolio.html" style="display: block; padding: 5px 0;">Portfolio</a></li>
+                    <li><a href="{{ site.baseurl }}/expertise.html" style="display: block; padding: 5px 0;">Expertise</a></li>
+                    <li><a href="{{ site.baseurl }}/services.html" style="display: block; padding: 5px 0;">Services</a></li>
+                    <li><a href="{{ site.baseurl }}/process.html" style="display: block; padding: 5px 0;">Process</a></li>
                 </ul>
             </nav>
 
             <!-- Example Work -->
-            <nav style="margin-top: 20px; border-top: 1px solid #ddd; padding-top: 15px;">
-                <h3 style="margin-top: 0;">Example Work</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a href="{{ site.baseurl }}/../REST-APIS">REST-APIS</a></li>
-                    <li><a href="{{ site.baseurl }}/../docs">Documentation Samples</a></li>
-                    <li><a href="{{ site.baseurl }}/../testing">Testing Docs</a></li>
+            <nav style="margin-top: 20px; border-top: 1px solid #ccc; padding-top: 15px;">
+                <h3 style="margin-top: 0; font-size: 14px;">💼 Example Work</h3>
+                <ul style="list-style: none; padding: 0; margin: 10px 0;">
+                    <li><a href="{{ site.baseurl }}/../REST-APIS" style="display: block; padding: 5px 0;">REST APIs</a></li>
+                    <li><a href="{{ site.baseurl }}/../docs" style="display: block; padding: 5px 0;">Doc Samples</a></li>
+                    <li><a href="{{ site.baseurl }}/../testing" style="display: block; padding: 5px 0;">Testing Docs</a></li>
                 </ul>
             </nav>
 
             <!-- Contact -->
-            <nav style="margin-top: 20px; border-top: 1px solid #ddd; padding-top: 15px;">
-                <h3 style="margin-top: 0;">Contact</h3>
-                <p>
+            <nav style="margin-top: 20px; border-top: 1px solid #ccc; padding-top: 15px;">
+                <h3 style="margin-top: 0; font-size: 14px;">📬 Contact</h3>
+                <p style="margin: 10px 0; font-size: 13px;">
                     📧 <a href="mailto:swoods.js@gmail.com">Email</a><br>
                     🔗 <a href="https://www.linkedin.com/in/1-shane-woods">LinkedIn</a>
                 </p>
@@ -50,6 +50,6 @@
             <p><small>Hosted on GitHub Pages</small></p>
         </footer>
     </div>
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 </body>
 </html>
+
