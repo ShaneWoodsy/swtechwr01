@@ -49,7 +49,7 @@ I'm actively looking for a W2 position on a team that values:
 - Collaboration between technical and non-technical teams
 - Continuous improvement and learning
 
-If you're looking for a dedicated technical writer who can develop documentation strategy, maintain API specs, and build scalable doc systems—let's talk!
+If you're looking for a dedicated technical writer who can develop a documentation strategy, maintain API specs, and build scalable doc systems—let's talk!
 
 ## 📬 Contact
 
