@@ -3,6 +3,11 @@ layout: default
 title: Process
 ---
 
+<div style="background-color: #f0f0f0; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
+<strong>Navigation:</strong> 
+[About](index.md) | [Portfolio](portfolio.md) | [Expertise](expertise.md) | [Services](services.md) | [Process](process.md)
+</div>
+
 # My Process
 
 ## Documentation Development Workflow
