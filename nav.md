@@ -26,11 +26,7 @@
 3. Check [Portfolio](portfolio.md) for real examples
 4. Read [Process](process.md) to understand my approach
 
-**For Clients:**
-1. Browse [Expertise](expertise.md) to see if skills match your needs
-2. Review [Services](services.md) for engagement options
-3. Look at [Portfolio](portfolio.md) for similar projects
-4. [Contact me](https://www.linkedin.com/in/1-shane-woods) to discuss your project
+
 
 ---
 
