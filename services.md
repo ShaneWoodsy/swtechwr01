@@ -59,4 +59,4 @@ I provide comprehensive technical writing and documentation services using moder
 
 ---
 
-**Ready to transform your documentation?** [Contact me](https://www.linkedin.com/in/1-shane-woods)
+**Ready to chat?** [Contact me](https://www.linkedin.com/in/1-shane-woods)
