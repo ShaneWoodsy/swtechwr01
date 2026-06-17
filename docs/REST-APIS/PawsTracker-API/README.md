@@ -1,1 +1,0 @@
-This specific API is an active, in-progress contract design simulation.
