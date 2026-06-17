@@ -1,8 +1,0 @@
----
----
-@import "{{ site.theme }}";
-
-// Force Dinky layout elements and navigation links to stay white
-header ul a, header p a, .sidebar a, nav a, header h1, header p, #banner .fork a {
-    color: #ffffff !important;
-}
