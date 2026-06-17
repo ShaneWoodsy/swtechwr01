@@ -44,7 +44,7 @@ const config: Config = {
       title: 'Shane Woods',
       items: [
         {
-          // 1) About Me (Your main Markdown landing page mapping to root)
+          // 1) About Me
           to: '/',
           label: 'About Me',
           position: 'left',
@@ -57,7 +57,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          // 3) Documentation Samples Portal (Housing your Dane Food API content)
+          // 3) Documentation Samples Portal
           type: 'docSidebar',
           sidebarId: 'portfolioSidebar',
           position: 'left',
