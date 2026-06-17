@@ -1,61 +1,41 @@
-# Shane Woods - Technical Writer & Docs as Code Professional
+# Website
 
-Transforming complex technical concepts into clear, accessible documentation using modern docs-as-code practices.
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## 👋 About This Site
+## Installation
 
-This is my professional portfolio showcasing expertise in technical writing and API documentation. I'm actively seeking a full-time W2 position where I can leverage my skills in documentation strategy, API specification, and technical content development.
+```bash
+yarn
+```
 
-## 🎯 What I Do
+## Local Development
 
-I specialize in:
-- **API Documentation** - OpenAPI specifications, REST API guides, developer-focused content
-- **Docs as Code** - Markdown, static site generators, version-controlled documentation
-- **Technical Writing** - User guides, architecture documentation, troubleshooting guides
-- **Documentation Strategy** - Building scalable documentation systems and workflows
-- **Style Guides** - Creating internal standards and documentation best practices
+```bash
+yarn start
+```
 
-## 🛠️ Tools & Technologies
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-- **Documentation**: Markdown, reStructuredText, OpenAPI/Swagger
-- **Version Control**: Git, GitHub
-- **Development**: VSCode, IntelliJ IDEA
-- **API Tools**: Postman, API design patterns
-- **Project Management**: Jira
-- **Static Sites**: Hugo, Jekyll, Sphinx, MkDocs
+## Build
 
-## 📚 Portfolio
+```bash
+yarn build
+```
 
-Explore my work and expertise:
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-- **[About](index)** - Quick introduction and contact
-- **[Expertise](expertise)** - Technical skills and specializations
-- **[Services](services)** - What I'm looking for in my next role
-- **[Process](process)** - How I approach documentation projects
-- **[Portfolio](portfolio)** - Documentation projects and examples
+## Deployment
 
-### Example Work
+Using SSH:
 
-Check out these directories for real documentation samples:
-- **[REST-APIS](REST-APIS/)** - API documentation examples
-- **[docs](docs/)** - Documentation project samples  
-- **[testing](testing/)** - Technical testing documentation
+```bash
+USE_SSH=true yarn deploy
+```
 
-## 💼 I'm Hiring Myself!
+Not using SSH:
 
-I'm actively looking for a W2 position on a team that values:
-- Clear, user-focused documentation
-- Modern docs-as-code workflows
-- Collaboration between technical and non-technical teams
-- Continuous improvement and learning
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
 
-If you're looking for a dedicated technical writer who can develop a documentation strategy, maintain API specs, and build scalable doc systems—let's talk!
-
-## 📬 Contact
-
-**Email**: [swoods.js@gmail.com](mailto:swoods.js@gmail.com)  
-**LinkedIn**: [1-shane-woods](https://www.linkedin.com/in/1-shane-woods)
-
----
-
-*Making complex ideas accessible, one document at a time.*
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

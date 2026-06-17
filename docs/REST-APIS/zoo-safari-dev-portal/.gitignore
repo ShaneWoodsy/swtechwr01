@@ -1,0 +1,44 @@
+# Node modules (used by Antora, Prism, Vale, etc.)
+node_modules/
+
+# Antora output folder (don't version static builds)
+build/
+_site/
+
+# Log files
+*.log
+
+# System-specific files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS generated files
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Vale (if using cache or logs)
+.vale/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Markdown lint or custom tooling logs (if used)
+.markdownlint.json
+vale.log
+
+# Coverage, test, or cache folders if testing in future
+coverage/
+.cache/
+
+# Optional: exclude local env or test configs
+.env
+.env.local

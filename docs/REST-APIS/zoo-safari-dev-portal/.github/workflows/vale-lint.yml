@@ -1,0 +1,28 @@
+name: Vale Linting
+
+on:
+  push:
+    paths:
+      - '**.adoc'
+      - '.vale.ini'
+      - 'styles/**'
+  pull_request:
+    paths:
+      - '**.adoc'
+      - '.vale.ini'
+      - 'styles/**'
+
+jobs:
+  vale:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Vale
+        uses: errata-ai/vale-action@reviewdog
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: .  # root directory
+          vale_flags: '--config=.vale.ini'

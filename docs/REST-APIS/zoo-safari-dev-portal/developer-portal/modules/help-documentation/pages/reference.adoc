@@ -1,0 +1,7 @@
+= API Reference
+This section will eventually include a full reference of all available endpoints.
+
+[NOTE]
+====
+This page is a placeholder. You can generate live OpenAPI-based docs later using Redoc or Swagger integration.
+====

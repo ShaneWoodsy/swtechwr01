@@ -3,7 +3,9 @@ layout: default
 title: About
 ---
 
-<img src="img/shane.png" alt="Shane Woods" style="width: 200px; height: 200px; border-radius: 50%; border: 3px solid #333; display: block; margin: 20px auto;">
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<img src={useBaseUrl('/img/shane.png')} alt="Shane Woods" style={{ width: '200px', height: '200px', borderRadius: '50%', border: '3px solid #333', display: 'block', margin: '20px auto' }} />
 
 # About Me
 
@@ -28,5 +30,3 @@ Hi I'm Shane, I enjoy taking complex ideas and tools and finding ways to make th
 
 📧 **Email**: [swoods.js@gmail.com](mailto:swoods.js@gmail.com)  
 🔗 **LinkedIn**: [1-shane-woods](https://www.linkedin.com/in/1-shane-woods)
-
-

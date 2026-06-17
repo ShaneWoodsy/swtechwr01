@@ -1,0 +1,10 @@
+= Help and FAQs
+
+== How do I get a token?
+Tokens are obtained using your API key through the `/auth/token` endpoint.
+
+== Who do I contact for support?
+Email our support team at `dev-support@zoo-safari.dev`.
+
+== How do I reset my API key?
+Go to the developer dashboard and choose “Reset API Key” under account settings.

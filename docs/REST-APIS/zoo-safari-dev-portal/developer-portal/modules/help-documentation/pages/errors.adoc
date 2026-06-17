@@ -1,0 +1,24 @@
+= Error Codes
+
+== Standard Error Format
+
+[source,json]
+----
+{
+  "error": "Unauthorized",
+  "status": 401,
+  "message": "Invalid token"
+}
+----
+
+== Common Status Codes
+
+|===
+| Status Code | Meaning            | Notes
+
+| 400         | Bad Request        | Malformed JSON or missing fields
+| 401         | Unauthorized       | Missing or invalid token
+| 403         | Forbidden          | User not allowed to access this resource
+| 404         | Not Found          | Resource does not exist
+| 500         | Internal Server Error | Something went wrong on our end
+|===

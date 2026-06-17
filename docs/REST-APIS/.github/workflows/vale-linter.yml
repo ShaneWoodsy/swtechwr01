@@ -1,0 +1,38 @@
+name: Vale Linter
+
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+      - '**/*.adoc'
+      - '**/*.yaml'
+      - '**/*.yml'
+      - '.vale.ini'
+      - 'styles/**'
+  push:
+    paths:
+      - '**/*.md'
+      - '**/*.adoc'
+      - '**/*.yaml'
+      - '**/*.yml'
+      - '.vale.ini'
+      - 'styles/**'
+
+jobs:
+  vale-linter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Vale
+        run: |
+          go install github.com/errata-ai/vale/v2/cmd/vale@latest
+          echo "$HOME/go/bin" >> $GITHUB_PATH
+
+      - name: Fetch Google styles
+        run: vale sync
+
+      - name: Run Vale Linter
+        run: vale --min-alert-level=warning --output=github

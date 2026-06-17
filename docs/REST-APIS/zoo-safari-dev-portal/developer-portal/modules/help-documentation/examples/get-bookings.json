@@ -1,0 +1,16 @@
+[
+  {
+    "id": "bk001",
+    "tourType": "individual",
+    "date": "2025-08-01",
+    "guests": 1,
+    "status": "confirmed"
+  },
+  {
+    "id": "bk002",
+    "tourType": "group",
+    "date": "2025-08-05",
+    "guests": 5,
+    "status": "pending"
+  }
+]

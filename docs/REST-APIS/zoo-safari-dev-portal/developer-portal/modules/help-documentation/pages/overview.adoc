@@ -1,0 +1,16 @@
+= Overview
+Zoo Safari Developer Portal
+
+Welcome to the Zoo Safari Developer Portal. This portal allows you to access our REST APIs for managing safari data, bookings, and animals.
+
+== Base URL
+`https://api.zoo-safari.dev/v1`
+
+== Authentication
+All requests must include an `Authorization` header with a valid Bearer token.
+
+== Getting Started
+To begin using our APIs:
+. Obtain an API key from the admin console
+. Use it to generate a Bearer token
+. Make requests to the endpoints listed in the API Reference
