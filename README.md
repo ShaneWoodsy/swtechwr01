@@ -41,7 +41,7 @@ Boot up the local Webpack dev server with live reloading enabled:
 ```bash
 npm start
 ```
-Once initialized, navigate to `http://localhost:3000/reponame/` to review local workspace compilation.
+Once initialized, navigate to `http://localhost:3000/repoName/` to review local workspace compilation.
 
 ### 3. Production Compilation
 Compile the raw Markdown, MDX, and asset directories into a minified, production-ready static HTML/CSS build:
@@ -53,6 +53,6 @@ npm run build
 This repository utilizes an automated deployment script to build and push production-ready assets straight to the isolated gh-pages branch for hosting:
 
 ```Bash
-GIT_USER=ShaneWoodsy npm run deploy
+GIT_USER=yourName npm run deploy
 ```
 
