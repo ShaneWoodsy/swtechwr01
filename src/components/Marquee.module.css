@@ -1,57 +1,67 @@
-.marqueeContainer {
-    overflow: hidden;
-    width: 100%;
-    padding: 2rem 0;
-    background: var(--ifm-background-surface-color);
-    border-radius: 8px;
+.wrapperContainer {
     position: relative;
+    width: 100%;
+}
+
+.navButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #303846;
+    border: 1px solid #3f4a5c;
+    color: #fff;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    transition: background 0.2s, transform 0.1s, opacity 0.2s;
+    user-select: none;
+    z-index: 10; /* Ensures the buttons sit on top of the scrolling cards */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Position arrows securely on the outer left and right edges */
+.leftBtn {
+    left: 10px;
+}
+
+.rightBtn {
+    right: 10px;
+}
+
+.navButton:hover {
+    background: #434e5f;
+}
+
+.navButton:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.marqueeContainer {
+    overflow-x: auto;
+    scrollbar-width: none;
+    width: 100%;
+    padding: 1.5rem 0;
+    position: relative;
+}
+
+.marqueeContainer::-webkit-scrollbar {
+    display: none;
 }
 
 .marqueeTrack {
     display: flex;
     width: max-content;
-    animation: scroll 45s linear infinite; /* Adjusted to 45s so the longer text is readable */
+    animation: scroll 45s linear infinite;
 }
 
-.marqueeTrack:hover {
-    animation-play-state: paused; /* Pauses the scrolling animation when hovered */
-}
-
-.marqueeCard {
-    width: 450px; /* Widened slightly to accommodate the real recommendation lengths smoothly */
-    margin: 0 1.5rem;
-    padding: 1.5rem;
-    background: var(--ifm-card-background-color);
-    border: 1px solid var(--ifm-border-color);
-    border-radius: 12px;
-    box-shadow: var(--ifm-global-shadow-lw);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.quote {
-    font-style: italic;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
-    color: var(--ifm-color-emphasis-800);
-    white-space: pre-line;
-}
-
-.meta {
-    margin-top: auto;
-}
-
-.author {
-    margin: 0;
-    font-size: 0.95rem;
-    font-weight: bold;
-}
-
-.role {
-    font-size: 0.8rem;
-    color: var(--ifm-color-content-secondary);
+.marqueeContainer:hover .marqueeTrack,
+.pausedAnimation .marqueeTrack {
+    animation-play-state: paused;
 }
 
 @keyframes scroll {

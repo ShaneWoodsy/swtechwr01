@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styles from './Marquee.module.css';
 
 interface Recommendation {
@@ -59,21 +59,62 @@ const recommendations: Recommendation[] = [
 ];
 
 export default function Marquee(): JSX.Element {
-    // Duplicate the array to create a seamless infinite scrolling illusion
-    const doubleRecs = [...recommendations, ...recommendations];
+    const containerRef = useRef<HTMLDivElement>(null);
+    const [isPaused, setIsPaused] = useState(false);
+
+    // Scroll amount per click (Card width 500px + 50px total margins = 550px)
+    const handleScroll = (direction: 'left' | 'right') => {
+        if (containerRef.current) {
+            setIsPaused(true); // Temporarily pause automated animation loop on click interaction
+            const scrollAmount = direction === 'left' ? -550 : 550;
+            containerRef.current.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    };
 
     return (
-        <div className={styles.marqueeContainer}>
-            <div className={styles.marqueeTrack}>
-                {doubleRecs.map((rec, index) => (
-                    <div key={index} className={styles.marqueeCard}>
-                        <p className={styles.quote}>"{rec.text}"</p>
-                        <div className={styles.meta}>
-                            <h4 className={styles.author}>{rec.name}</h4>
-                            <span className={styles.role}>{rec.role}</span>
+        <div className={styles.wrapperContainer}>
+            {/* MANUAL CONTROLS OVERLAID */}
+            <button onClick={() => handleScroll('left')} className={`${styles.navButton} ${styles.leftBtn}`} aria-label="Previous recommendation">◀</button>
+            <button onClick={() => handleScroll('right')} className={`${styles.navButton} ${styles.rightBtn}`} aria-label="Next recommendation">▶</button>
+
+            <div
+                ref={containerRef}
+                className={`${styles.marqueeContainer} ${isPaused ? styles.pausedAnimation : ''}`}
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
+            >
+                <div className={styles.marqueeTrack}>
+                    {[...recommendations, ...recommendations].map((rec, index) => (
+                        <div
+                            key={index}
+                            className={styles.marqueeCard}
+                            style={{
+                                width: '500px',
+                                minWidth: '500px',
+                                flexShrink: 0,
+                                margin: '0 25px',
+                                padding: '25px',
+                                background: '#434e5f',
+                                border: '1px solid #303846',
+                                borderRadius: '12px',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyContent: 'space-between'
+                            }}
+                        >
+                            <div className={styles.quote}>
+                                <p style={{ margin: 0, fontStyle: 'italic', color: '#e3e8f0' }}>"{rec.text}"</p>
+                            </div>
+                            <div className={styles.meta} style={{ marginTop: '20px', paddingTop: '15px', borderTop: '1px solid #303846' }}>
+                                <h4 className={styles.author} style={{ margin: '0 0 5px 0', fontWeight: 'bold', color: '#fff' }}>{rec.name}</h4>
+                                <span className={styles.role} style={{ fontSize: '0.85rem', color: '#8a99ad' }}>{rec.role}</span>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     );

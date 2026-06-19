@@ -13,3 +13,7 @@ Welcome to the Dane Food API reference engine. This system provides programmatic
 * **Development:** `https://development.gigantic-server.com`
 
 This service uses a REST architecture over standard HTTPS paths, returning structured JSON response payloads for all collections.
+
+| API Version | Last Updated | Docs Version | Status |
+| :--- | :--- | :--- | :--- |
+| `v1.0.0` | June 2026 | `v1.0` | 🟢 Active |
