@@ -1,0 +1,60 @@
+.marqueeContainer {
+    overflow: hidden;
+    width: 100%;
+    padding: 2rem 0;
+    background: var(--ifm-background-surface-color);
+    border-radius: 8px;
+    position: relative;
+}
+
+.marqueeTrack {
+    display: flex;
+    width: max-content;
+    animation: scroll 45s linear infinite; /* Adjusted to 45s so the longer text is readable */
+}
+
+.marqueeTrack:hover {
+    animation-play-state: paused; /* Pauses the scrolling animation when hovered */
+}
+
+.marqueeCard {
+    width: 450px; /* Widened slightly to accommodate the real recommendation lengths smoothly */
+    margin: 0 1.5rem;
+    padding: 1.5rem;
+    background: var(--ifm-card-background-color);
+    border: 1px solid var(--ifm-border-color);
+    border-radius: 12px;
+    box-shadow: var(--ifm-global-shadow-lw);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    color: var(--ifm-color-emphasis-800);
+    white-space: pre-line;
+}
+
+.meta {
+    margin-top: auto;
+}
+
+.author {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.role {
+    font-size: 0.8rem;
+    color: var(--ifm-color-content-secondary);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
