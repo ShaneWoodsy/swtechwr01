@@ -37,4 +37,9 @@ Taking complex technical concepts and making them accessible to diverse audience
     * **Infrastructure Management:** Spearheaded system inventory tracking and endpoint configuration management utilizing the KACE Systems Management Appliance (SMA) across multiple regional enterprise sites.
     * **Account Provisioning:** Managed Windows Server user provisioning workflows within Active Directory and handled messaging architecture privileges inside the Microsoft Exchange Administration Center.
 
+## 🏆 Honors and Awards
 
+
+ **2024 DevPortal Awards Nominee (Sabre Dev Studio)**
+ 
+ Sabre Dev Studio was recognized and nominated for its high-quality developer portal experience, API reference architecture, and documentation ecosystem supporting thousands of global external developers.
