@@ -56,3 +56,4 @@ This repository utilizes an automated deployment script to build and push produc
 GIT_USER=yourName npm run deploy
 ```
 
+# Fix deployment
