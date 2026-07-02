@@ -42,49 +42,35 @@ Taking complex technical concepts and making them accessible to diverse audience
 
  **2024 DevPortal Awards Nominee (Sabre Dev Studio)**
  
- Sabre Dev Studio was recognized and nominated for its high-quality developer portal experience, API reference architecture, and documentation ecosystem supporting thousands of global external developers.
+ Sabre Dev Studio was recognized and [nominated](https://devportalawards.org/nominees/2024/sabre-dev-studio) for its high-quality developer portal experience, API reference architecture, and documentation ecosystem supporting thousands of global external developers.
 
 #### Contact Me
 
-<div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', margin: '15px 0' }}>
+<div className="contact-button-group">
 
-{/* RESUME BUTTON */}
-<a href="https://shanewoodsy.github.io/swtechwr01/SW_Resume.pdf" download="SW_Resume.pdf" style={{
-display: 'inline-block',
-backgroundColor: '#434e5f',
-color: '#fff',
-padding: '10px 20px',
-borderRadius: '5px',
-textDecoration: 'none',
-fontWeight: 'bold'
-}}>
-📥 Download Resume (PDF)
-</a>
+<a
+href="https://shanewoodsy.github.io/swtechwr01/SW_Resume.pdf"
+target="_blank"
+rel="noopener noreferrer"
+className="btn-modern"
+>
+    📥 Download Resume (PDF)
+  </a>
 
-{/* EMAIL BUTTON */}
-<a href="mailto:swoods.js@gmail.com" style={{
-display: 'inline-block',
-backgroundColor: '#434e5f',
-color: '#fff',
-padding: '10px 20px',
-borderRadius: '5px',
-textDecoration: 'none',
-fontWeight: 'bold'
-}}>
-✉️ Email Me
-</a>
+<a
+href="mailto:swoods.js@gmail.com"
+className="btn-modern"
+>
+    ✉️ Email Me
+  </a>
 
-{/* LINKEDIN BUTTON */}
-<a href="https://www.linkedin.com/in/1-shane-woods" target="_blank" rel="noopener noreferrer" style={{
-display: 'inline-block',
-backgroundColor: '#434e5f',
-color: '#fff',
-padding: '10px 20px',
-borderRadius: '5px',
-textDecoration: 'none',
-fontWeight: 'bold'
-}}>
-💼 LinkedIn
-</a>
+<a
+href="https://www.linkedin.com/in/1-shane-woods"
+target="_blank"
+rel="noopener noreferrer"
+className="btn-modern"
+>
+    💼 LinkedIn
+  </a>
 
 </div>

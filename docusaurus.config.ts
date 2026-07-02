@@ -5,8 +5,8 @@ const config: Config = {
   title: 'Shane Woods',
   tagline: 'Senior Technical Writer Portfolio',
   url: 'https://shanewoodsy.github.io',
-  baseUrl: '/swtechwr01/', // Matches your repository name exactly for GitHub Pages routing
-  onBrokenLinks: 'warn',   // Warns instead of crashing until all files are populated
+  baseUrl: '/swtechwr01/',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'ShaneWoodsy',
@@ -18,8 +18,8 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts', // Points cleanly to your TypeScript sidebar engine
-          routeBasePath: 'docs',        // Directs documentation to live at /docs/
+          sidebarPath: './sidebars.ts',
+          routeBasePath: 'docs',
         },
         blog: {
           showReadingTime: true,
@@ -34,7 +34,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Forces modern dark mode aesthetic by default
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
@@ -44,27 +43,28 @@ const config: Config = {
       title: 'Shane Woods',
       items: [
         {
-          // 1) About Me
           to: '/',
           label: 'About Me',
           position: 'left',
           exact: true,
         },
         {
-          // 2) Expertise Section
           to: '/expertise',
           label: 'Expertise',
           position: 'left',
         },
         {
-          // 3) Documentation Samples Portal
           type: 'docSidebar',
           sidebarId: 'portfolioSidebar',
           position: 'left',
-          label: 'Documentation Samples',
+          label: 'API Reference',
         },
         {
-          // Your pure Markdown blog system
+          to: '/case-studies',
+          label: 'Case Studies',
+          position: 'left',
+        },
+        {
           to: '/blog',
           label: 'Blog',
           position: 'right'
