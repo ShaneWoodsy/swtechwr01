@@ -1,6 +1,6 @@
 # 🚀 Shane Woods | Technical Writing Portfolio & Developer Portal
 
-Welcome to the source repository for my professional technical writing portfolio. This site is built using a decentralized, Git-based **Docs-as-Code** model with Docusaurus, React, and MDX to showcase my experience in API lifecycle management, automated quality governance, and developer documentation frameworks.
+Welcome to the source repository for my professional technical writing portfolio. This site was built using a decentralized, Git-based **Docs-as-Code** model with Docusaurus, React, and MDX to showcase my experience in API lifecycle management, automated quality governance, and developer documentation frameworks.
 
 🔗 **Live Portal:** [https://ShaneWoodsy.github.io/swtechwr01/](https://ShaneWoodsy.github.io/swtechwr01/)
 
