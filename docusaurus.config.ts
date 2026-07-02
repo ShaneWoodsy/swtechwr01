@@ -49,11 +49,6 @@ const config: Config = {
           exact: true,
         },
         {
-          to: '/expertise',
-          label: 'Expertise',
-          position: 'left',
-        },
-        {
           type: 'docSidebar',
           sidebarId: 'portfolioSidebar',
           position: 'left',

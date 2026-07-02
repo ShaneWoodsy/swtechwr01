@@ -17,3 +17,53 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+books:
+  label: Books
+  permalink: /books
+  description: Book recommendations and reading notes
+
+reading:
+  label: Reading
+  permalink: /reading
+  description: Thoughts on reading and learning
+
+tech:
+  label: Tech
+  permalink: /tech
+  description: Technology career and tips
+
+microsoft-365:
+  label: Microsoft 365
+  permalink: /microsoft-365
+  description: Guides and tips for Microsoft 365
+
+learning:
+  label: Learning
+  permalink: /learning
+  description: Learning strategies and resources
+
+technical-documentation:
+  label: Technical Documentation
+  permalink: /technical-documentation
+  description: Documentation practices and case studies
+
+collaboration:
+  label: Collaboration
+  permalink: /collaboration
+  description: Teamwork and collaboration stories
+
+career:
+  label: Career
+  permalink: /career
+  description: Career development and experiences
+
+experience:
+  label: Experience
+  permalink: /experience
+  description: Personal experiences and lessons
+
+new-year:
+  label: New Year
+  permalink: /new-year
+  description: New Year reflections and goals
