@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkswtechwr01=globalThis.webpackChunkswtechwr01||[]).push([[2007],{6045(e){e.exports=JSON.parse('{"metadata":{"permalink":"/swtechwr01/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":8,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
