@@ -1,0 +1,27 @@
+name: Vale Prose Linter
+
+on:
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - 'docs/**'
+      - 'blog/**'
+      - '.vale.ini'
+
+jobs:
+  vale-linter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run Vale Linter
+        uses: vale-cli/vale-action@v2
+        with:
+
+          files: '["docs", "blog"]'
+
+        fail_on_error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
