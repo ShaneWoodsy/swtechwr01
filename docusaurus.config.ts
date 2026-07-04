@@ -22,7 +22,7 @@ const config: Config = {
   title: 'Shane Woods',
   tagline: 'Senior Technical Writer Portfolio',
   url: 'https://shanewoodsy.github.io',
-  baseUrl: '/swtechwr01/',
+  baseUrl: process.env.NETLIFY ? '/' : '/swtechwr01/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
