@@ -5,7 +5,7 @@ title: Authentication Options
 
 # Authentication Options
 
-The Dane Food API gateway natively supports two distinct protocol validation methods to protect resource paths depending on your specific infrastructure environment context.
+The Dane Food API gateway natively supports two distinct protocol validation methods to protect resource paths depending on your specific infrastructure environmental context.
 
 ### 1. HTTP Basic Authentication
 For quick scripts or development testing, pass your base64 encoded credential pairs inside the standard header block:
