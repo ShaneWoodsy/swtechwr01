@@ -93,7 +93,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: '/SW_Resume.pdf',
+          href: 'https://shanewoodsy.github.io/swtechwr01/SW_Resume.pdf',
           label: 'Resume',
           position: 'right',
         },
@@ -117,7 +117,7 @@ const config: Config = {
           items: [
             {
               label: '📥 Download Resume (PDF)',
-              href: '/SW_Resume.pdf',
+              href: 'https://shanewoodsy.github.io/swtechwr01/SW_Resume.pdf',
             },
             {
               label: '✉️ Email Me',
