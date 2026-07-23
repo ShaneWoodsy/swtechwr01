@@ -21,7 +21,7 @@ return (
 <tr>
 <td><code>v{siteConfig.customFields.currentApiVersion}</code></td>
 <td>{siteConfig.customFields.lastUpdatedDate}</td>
-<td><code>v1.0</code></td>
+<td><code>v{siteConfig.customFields.currentApiVersion}</code></td>
 <td>🟢 Active</td>
 </tr>
 </tbody>
