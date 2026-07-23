@@ -35,6 +35,12 @@ const config: Config = {
     lastUpdatedDate: currentBuildDate,
   },
 
+  markdown: {
+    mermaid: true,
+  },
+
+  themes: ['@docusaurus/theme-mermaid'],
+
   presets: [
     [
       'classic',
