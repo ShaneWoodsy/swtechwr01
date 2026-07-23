@@ -3,9 +3,8 @@ name: Spectral API Linter
 on:
   pull_request:
     branches: [ main, master ]
-    paths:
-      - '**.yaml'
-      - '**.yml'
+  push:
+    branches: [ main, master ]
 
 jobs:
   spectral-check:
@@ -18,4 +17,5 @@ jobs:
         uses: stoplightio/spectral-action@latest
         with:
           file_glob: '**.yaml'
+          spectral_ruleset: '.spectral.yaml'
           repo_token: ${{ secrets.GITHUB_TOKEN }}
