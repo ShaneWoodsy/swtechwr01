@@ -8,6 +8,7 @@ const sidebars: SidebarsConfig = {
       collapsible: false, // Keeps sidebar open like a real portal dashboard
       items: [
         'REST-APIS/Dane-Food-API/1.0.0/overview',
+        'REST-APIS/Dane-Food-API/1.0.0/release-notes',
         'REST-APIS/Dane-Food-API/1.0.0/authentication',
         'REST-APIS/Dane-Food-API/1.0.0/make-call',
         'REST-APIS/Dane-Food-API/1.0.0/use-cases',
