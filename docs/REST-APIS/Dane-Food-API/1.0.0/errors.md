@@ -1,4 +1,3 @@
-
 ---
 id: errors
 title: Error Responses and Handling
