@@ -1,3 +1,4 @@
+
 ---
 id: errors
 title: Error Responses and Handling
@@ -12,12 +13,17 @@ The Dane Food API uses standard HTTP status codes to communicate request outcome
 ## HTTP Status Codes Overview
 
 | Code | Status | Use Case |
-|------|--------|----------|
-| `200` | OK | Successful GET, PUT, DELETE |
-| `201` | Created | Successful POST (resource created) |
-| `400` | Bad Request | Invalid input, validation failure |
-| `404` | Not Found | Resource doesn't exist |
-| `409` | Conflict | Duplicate resource, state conflict |
+| :--- | :--- | :--- |
+| **200** | OK | Successful GET, PUT, DELETE |
+| **201** | Created | Successful POST (resource created) |
+| **400** | Bad Request | Invalid payload syntax or validation failure |
+| **401** | Unauthorized | Missing or invalid authentication credentials |
+| **403** | Forbidden | Valid credentials, but insufficient permissions |
+| **404** | Not Found | Requested resource does not exist |
+| **409** | Conflict | Unique constraint violation or state conflict |
+| **429** | Too Many Requests | Rate limit exceeded |
+| **500** | Internal Server Error | Generic server-side failure |
+| **503** | Service Unavailable | Temporary server overload or maintenance |
 
 ---
 
@@ -34,7 +40,7 @@ A `400 Bad Request` error indicates that the API rejected the request due to mal
 - Incorrect data types
 
 **Example Error Scenario:**
-```bash
+```http
 POST /v1/customers
 Content-Type: application/json
 
@@ -42,7 +48,7 @@ Content-Type: application/json
   "firstName": "John",
   "lastName": "Smith",
   "address": {
-    "stateCode": "INVALID"  # Invalid: Must be 2-letter code (AL, AK, AZ, etc.)
+    "stateCode": "INVALID"
   }
 }
 
@@ -70,7 +76,7 @@ Content-Type: application/json
 
 **Example Error Scenario:**
 
-```bash
+```http
 POST /v1/customers/{customerId}/orders
 Content-Type: application/json
 
@@ -79,7 +85,7 @@ Content-Type: application/json
   "foodOrderLines": [
     {
       "upc": "812345678901",
-      "orderQuantity": 1500  # Invalid: Maximum is 999
+      "orderQuantity": 1500
     }
   ]
 }
@@ -107,13 +113,13 @@ Content-Type: application/json
 
 **Example Error Scenario:**
 
-```bash
+```http
 POST /v1/foods
 Content-Type: application/json
 
 {
   "BrandName": "Premium Pets",
-  "FoodName": "Unknown Brand",  # Invalid
+  "FoodName": "Unknown Brand",
   "price": 24.99,
   "quantityOnHand": 150
 }
@@ -140,12 +146,12 @@ Content-Type: application/json
 
 **Example Error Scenario:**
 
-```bash
+```http
 POST /v1/customers
 Content-Type: application/json
 
 {
-  "firstName": "J",  # Invalid: Must be 2-100 characters
+  "firstName": "J",
   "lastName": "Smith"
 }
 
@@ -172,7 +178,7 @@ Content-Type: application/json
 
 **Example Error Scenario:**
 
-```bash
+```http
 GET /v1/customers/not-a-uuid
 
 ```
@@ -207,7 +213,7 @@ A `404 Not Found` error indicates that the requested resource doesn't exist in t
 
 **Example Error Scenario:**
 
-```bash
+```http
 GET /v1/customers/550e8400-e29b-41d4-a716-446655440999
 
 ```
@@ -234,7 +240,7 @@ GET /v1/customers/550e8400-e29b-41d4-a716-446655440999
 
 **Example Error Scenario:**
 
-```bash
+```http
 GET /v1/foods/550e8400-e29b-41d4-a716-446655440999
 
 ```
@@ -261,7 +267,7 @@ GET /v1/foods/550e8400-e29b-41d4-a716-446655440999
 
 **Example Error Scenario:**
 
-```bash
+```http
 GET /v1/foods
 
 ```
@@ -297,7 +303,7 @@ A `409 Conflict` error indicates that the request conflicts with the current sta
 
 **Example Error Scenario:**
 
-```bash
+```http
 POST /v1/customers
 Content-Type: application/json
 
@@ -336,7 +342,7 @@ Content-Type: application/json
 
 **Example Error Scenario:**
 
-```bash
+```http
 POST /v1/foods
 Content-Type: application/json
 
@@ -370,7 +376,7 @@ Content-Type: application/json
 
 **Example Error Scenario:**
 
-```bash
+```http
 POST /v1/customers/{customerId}/orders
 Content-Type: application/json
 
@@ -379,7 +385,7 @@ Content-Type: application/json
   "foodOrderLines": [
     {
       "upc": "812345678901",
-      "orderQuantity": 5000  # Insufficient inventory
+      "orderQuantity": 5000
     }
   ]
 }
@@ -408,7 +414,7 @@ Content-Type: application/json
 
 **Example Error Scenario:**
 
-```bash
+```http
 PUT /v1/customers/{customerId}
 Content-Type: application/json
 
@@ -444,11 +450,13 @@ All error responses follow a consistent JSON structure:
 {
   "status": 400,
   "message": "Descriptive error message",
-  "timestamp": "2024-01-15T10:30:00Z",
+  "timestamp": "2026-07-23T10:30:00Z",
   "path": "/v1/customers"
 }
 
 ```
+
+> **Note:** Example response payloads throughout this guide omit `timestamp` and `path` for brevity, but all production API responses contain the complete schema above.
 
 ### Fields:
 
@@ -567,7 +575,7 @@ const handleResponse = async (response) => {
 
 ## Support
 
-For unresolved errors or unexpected responses, contact: **shane@example.com**
+For unresolved errors or unexpected responses, contact: **swoods.js@gmail.com**
 
 Include the following in your report:
 
@@ -576,3 +584,7 @@ Include the following in your report:
 * Request endpoint and method
 * Request payload (sanitized)
 * Timestamp of occurrence
+
+```
+
+```
