@@ -90,7 +90,17 @@ const config: Config = {
         {
           to: '/blog',
           label: 'Blog',
-          position: 'right'
+          position: 'right',
+        },
+        {
+          href: '/SW_Resume.pdf',
+          label: 'Resume',
+          position: 'right',
+        },
+        {
+          href: 'https://www.linkedin.com/in/1-shane-woods',
+          label: 'LinkedIn',
+          position: 'right',
         },
         {
           href: 'https://github.com/ShaneWoodsy',
@@ -101,6 +111,46 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
+      links: [
+        {
+          title: 'Get in Touch',
+          items: [
+            {
+              label: '📥 Download Resume (PDF)',
+              href: '/SW_Resume.pdf',
+            },
+            {
+              label: '✉️ Email Me',
+              href: 'mailto:swoods.js@gmail.com',
+            },
+            {
+              label: '💼 LinkedIn',
+              href: 'https://www.linkedin.com/in/1-shane-woods',
+            },
+          ],
+        },
+        {
+          title: 'Quick Links',
+          items: [
+            {
+              label: 'About Me',
+              to: '/',
+            },
+            {
+              label: 'Case Studies',
+              to: '/case-studies',
+            },
+            {
+              label: 'Blog',
+              to: '/blog',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/ShaneWoodsy',
+            },
+          ],
+        },
+      ],
       copyright: `Copyright © ${new Date().getFullYear()} Shane Woods. Built with Docusaurus.`,
     },
   } satisfies Preset.ThemeConfig,
