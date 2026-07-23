@@ -13,6 +13,7 @@ const sidebars: SidebarsConfig = {
         'REST-APIS/Dane-Food-API/1.0.0/use-cases',
         'REST-APIS/Dane-Food-API/1.0.0/workflows',
         'REST-APIS/Dane-Food-API/1.0.0/expectations',
+        'REST-APIS/Dane-Food-API/1.0.0/errors',
         'REST-APIS/Dane-Food-API/1.0.0/best-practices',
         'REST-APIS/Dane-Food-API/1.0.0/glossary',
         'REST-APIS/Dane-Food-API/1.0.0/code-samples',
